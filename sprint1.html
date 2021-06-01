@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+  
+    <div class="container-fluid">
+        <div id="ux"></div>
+        <div id="images"></div>
+    </div>
+    <script type="text/babel">
+        class Welcome1 extends React.Component {
+        render() {
+            return <div>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Bhavya Nandikolla</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </div>
+                        </div>
+                    </div>
+                    </nav>
+            <div>
+                <div class="jumbotron">
+  <h1 class="display-4">Project UI design</h1>
+  <p class="lead"><b><i>The initial sketches of the project were the outcome of the design sprints conducted. This included defining features, giving an opportunity to define the user experience as well.</i></b></p>
+  <hr class="my-4"></hr>
+  <p><b><i>A few user stories also underwent some changes during the design sprints.</i></b></p></div><p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Crazy-8 sketches</a></p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    <img src="design.jpg" class="img-fluid w-5" ></img>
+  </div>
+</div></div></div> ;
+        }
+    }
+    class Welcome2 extends React.Component {
+        render() {
+            return <div>
+                <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+                        <h1 class="display-3">The prototype</h1> <br/>
+                        <p>The initial ideas and the user stories were sketched using <b>balsamiq</b>, a prototyping tool.</p><br/>
+                    </div>
+                </div>
+                <div class="row" >
+                    <div id="one" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 mb-2">
+                        <img src="cp1.png" class="img-fluid"/>
+                    </div>
+                    <div id="one" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 mb-2">
+                        <img src="cp3.png" class="img-fluid"/>
+                    </div>
+                    <div id="one" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 mb-2">
+                        <img src="cp4.png" class="img-fluid"/>
+                    </div>
+                </div>
+                </div>
+                    </div>
+            
+            ;
+                
+           
+        }
+    }
+    ReactDOM.render(<Welcome1/>,document.getElementById('ux'));
+
+    ReactDOM.render(<Welcome2/>,document.getElementById('images'));
+
+
+    </script>
+</body>
+</html>
